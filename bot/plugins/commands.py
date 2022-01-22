@@ -65,13 +65,16 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('👮 Developers', url='https://t.me/c/1417456571/587'),
-        InlineKeyboardButton('Source Code 👨‍💻', url ='https://github.com/tgbotsProject/auto-filter-bot')
-    ],[
-        InlineKeyboardButton('👥 Support 👥', url='https://t.me/izaute/5')
-    ],[
-        InlineKeyboardButton('🆘 Help & Information 🆘', callback_data="help")
-    ]]
+            InlineKeyboardButton('🔍Search🔎', switch_inline_query_current_chat='')
+            ],[
+            InlineKeyboardButton('🔊Channel🔊', url='https://t.me/moviespot00100'),
+            InlineKeyboardButton('💬Group💬', url='https://t.me/moviespot001100')
+            ],[
+            InlineKeyboardButton('🛠Help🛠', callback_data='help'),
+            InlineKeyboardButton('😎About😎', callback_data='about')
+            ],[
+            InlineKeyboardButton('🧑‍💻Dev🧑‍💻', url='https://t.me/Zinan00100')
+            ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
